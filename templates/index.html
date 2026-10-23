@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UDL_ICO</title>
-</head>
-<body>
-    <h1>UDL_ICO</h1>
-<p> Bienvenido a UDL_ICO</p>
-<p> Estamos felices de tenerte aquí</p>
-</body>
-</html>
+{% extends "layaout.html" %}
+
+{% block content %}
+
+     <div class="container">
+            <h1>UDL-ICO</h1>
+            <p>{{ mensaje }}</p>
+            <p>Esta es una pagina de ejemplo para mostrar como funciona Flask con plantillas HTML. </p>
+     </div>
+    
+{% endblock %}
