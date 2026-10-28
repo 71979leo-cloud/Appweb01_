@@ -1,0 +1,123 @@
+/* ==========================================
+   Estilos Globales & Tipografía
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f4f6f9;
+    color: #334155;
+    line-height: 1.6;
+    padding-bottom: 3rem;
+}
+
+/* ==========================================
+   Contenedor Principal
+   ========================================== */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilo para las tarjetas de contenido (index, servicios, productos, contacto) */
+div.container:not(:first-child) {
+    background: #ffffff;
+    padding: 3rem 2.5rem;
+    margin-top: 2rem;
+    border-radius: 16px;
+    border: none;
+    border-top: 5px solid #2563eb; /* Línea de acento azul */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div.container:not(:first-child):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 35px -10px rgba(37, 99, 235, 0.1);
+}
+
+/* ==========================================
+   Barra de Navegación (Llamativa y Elegante)
+   ========================================== */
+.navbar {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #ffffff !important;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 0.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #cbd5e1 !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Hover de los enlaces */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Enlace activo seleccionado */
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    background-color: #2563eb;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================
+   Títulos y Textos
+   ========================================== */
+h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Línea decorativa bajo el título */
+h1::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #2563eb;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+p {
+    font-size: 1.05rem;
+    color: #475569;
+    margin-bottom: 1rem;
+}
+
+p:first-of-type {
+    font-weight: 500;
+    color: #2563eb; /* Resalta el mensaje dinámico del backend */
+    font-size: 1.15rem;
+}
